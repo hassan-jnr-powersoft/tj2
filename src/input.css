@@ -8,8 +8,50 @@
 body {
   font-family: "Gilroy", sans-serif;
 }
-.table{
-    border-radius: 0.375rem;
-    border: 0.5px solid white;
-    backdrop-filter: blur(65.5px);
+.table1 {
+  border-radius: 0.375rem;
+  border: 0.5px solid white;
+  backdrop-filter: blur(65.5px);
+}
+.table2 {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(225, 225, 225, 0.20);
+  backdrop-filter: blur(65.5px);
+}
+.table3{
+  border-radius: 0.75rem;
+border: 1px solid var(--white-opacity-20, rgba(255, 255, 255, 0.20));
+background: rgba(255, 255, 255, 0.10);
+backdrop-filter: blur(65.5px);
+}
+.btn:hover {
+  background-color: #23f23e;
+  color: #202253;
+}
+.btn:hover .img {
+  filter: brightness(0);
+}
+.btn{
+  transition: all 0.1s ease-in;
+}
+.btn1{
+  border-radius: 6.25rem;
+  border: 1px solid var(--black-white-white, #FFF);
+}
+.project::before{
+  content: url(assets/pics/onlylogo.png);
+  position: relative;
+  top: -3rem;
+  left: -3rem;
+
+}
+.project::after{
+  content: url(assets/pics/onlyname.png);
+}
+.footer{
+  border-radius: 0.75rem;
+border: 1px solid rgba(255, 255, 255, 0.20);
+background: rgba(255, 255, 255, 0.10);
+
+backdrop-filter: blur(65.5px);
 }
