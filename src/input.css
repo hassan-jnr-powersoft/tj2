@@ -15,14 +15,14 @@ body {
 }
 .table2 {
   border-radius: 0.75rem;
-  border: 1px solid rgba(225, 225, 225, 0.20);
+  border: 1px solid rgba(225, 225, 225, 0.2);
   backdrop-filter: blur(65.5px);
 }
-.table3{
+.table3 {
   border-radius: 0.75rem;
-border: 1px solid var(--white-opacity-20, rgba(255, 255, 255, 0.20));
-background: rgba(255, 255, 255, 0.10);
-backdrop-filter: blur(65.5px);
+  border: 1px solid var(--white-opacity-20, rgba(255, 255, 255, 0.2));
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(65.5px);
 }
 .btn:hover {
   background-color: #23f23e;
@@ -31,27 +31,46 @@ backdrop-filter: blur(65.5px);
 .btn:hover .img {
   filter: brightness(0);
 }
-.btn{
+.btn {
   transition: all 0.1s ease-in;
 }
-.btn1{
+.btn1 {
   border-radius: 6.25rem;
-  border: 1px solid var(--black-white-white, #FFF);
+  border: 1px solid var(--black-white-white, #fff);
 }
-.project::before{
+.project::before {
   content: url(assets/pics/onlylogo.png);
   position: relative;
   top: -3rem;
   left: -3rem;
-
 }
-.project::after{
+.project::after {
   content: url(assets/pics/onlyname.png);
 }
-.footer{
+.footer {
   border-radius: 0.75rem;
-border: 1px solid rgba(255, 255, 255, 0.20);
-background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
 
-backdrop-filter: blur(65.5px);
+  backdrop-filter: blur(65.5px);
+}
+
+.line {
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(65.5px);
+}
+.slider{
+  animation: 30s slide infinite linear;
+}
+.slider:hover{
+  animation-play-state:paused ;
+}
+@keyframes slide {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
 }
