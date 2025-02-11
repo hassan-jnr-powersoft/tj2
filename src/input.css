@@ -1,6 +1,6 @@
 @import "tailwindcss";
 .tester-bg {
-  background-position: 105% 10% 0% 0%;
+  background-position: 15% 10% ;
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 1.5;

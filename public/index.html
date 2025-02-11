@@ -8,9 +8,10 @@
       rel="stylesheet"
       href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="overflow-x-hidden">
     <!-- Header  -->
     <div
       class="w-full h-[60rem] tester-bg"
@@ -42,16 +43,28 @@
       </div>
       <!-- Image Text -->
       <div class="">
-        <div class="pt-[15.44rem]">
-          <div class="text-center text-[3.7rem] font-bold text-white">
+        <div
+          class="pt-[15.44rem]"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <div
+            class="text-center max-2xl:text-[30px] 2xl:text-[3.7rem] font-bold text-white"
+          >
             DEFYING BOUNDS,
           </div>
-          <div class="text-center text-[3.7rem] -mt-5 font-bold text-white">
+          <div
+            class="text-center max-2xl:text-[30px] 2xl:text-[3.7rem] max-2xl:-mt-2 2xl:-mt-5 font-bold text-white"
+          >
             DELIVERING EXCELLENCE
           </div>
         </div>
         <div
-          class="max-2xl:w-[70%] 2xl:w-[56%] mx-auto text-center 2xl:text-[1.5rem] max-2xl:text-[1.2rem] text-white font-extralight tracking-wide"
+          class="max-2xl:w-[100%] max-2xl:px-5 2xl:w-[56%] mx-auto text-center 2xl:text-[1.5rem] max-2xl:text-[14px] text-white font-extralight tracking-wide"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
         >
           We specialize in crafting stunning 3D models, lifestyle visuals, and
           photorealistic animations to meet diverse e-commerce needs. From
@@ -62,6 +75,9 @@
         <div class="text-center my-4">
           <button
             class="bg-white px-[2.3rem] py-[0.8rem] cursor-pointer rounded-lg text-[1.125rem] font-medium text-[#202253]"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
           >
             Get Free Quote
           </button>
@@ -71,7 +87,7 @@
     <!-- What we Bring -->
     <div class="bg-[#202253]">
       <div
-        class="text-center text-[2.7rem] text-white font-bold uppercase pt-20"
+        class="text-center max-2xl:text-[2.25rem] 2xl:text-[2.7rem] text-white font-bold uppercase pt-20"
       >
         What we bring to the table!
       </div>
@@ -458,7 +474,9 @@
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis,
         </div>
       </div>
-      <div class="flex items-center justify-between pt-7 pb-32">
+      <div
+        class="flex items-center justify-between pt-7 pb-32 max-xl:gap-5 relative"
+      >
         <div class="relative">
           <img
             src="assets/pics/carousel-blur-left.png"
@@ -494,23 +512,27 @@
           <img
             src="assets/pics/arrow-carousel.png"
             alt=""
-            class="absolute left-32 pr-10 cursor-pointer"
+            class="absolute max-xl:top-[30%] 2xl:left-32 max-2xl:left-5 pr-10 cursor-pointer max-xl:w-20"
           />
           <img
             src="assets/pics/arrow-carousel.png"
             alt=""
-            class="rotate-180 absolute right-32 cursor-pointer"
+            class="rotate-180 max-xl:top-[30%] absolute 2xl:right-32 max-2xl:right-5 cursor-pointer max-xl:w-9.5"
           />
         </div>
       </div>
     </div>
     <!-- WHY WE! -->
-    <div class="bg-[#202253] 2xl:pt-32">
+    <div class="bg-[#202253] 2xl:pt-32 -mt-2">
       <div class="">
-        <div class="text-[3.375rem] font-bold text-white uppercase text-center">
+        <div
+          class="max-2xl:text-[2.25rem] 2xl:text-[3.375rem] font-bold text-white uppercase text-center"
+        >
           Why Choose Teejay 3D
         </div>
-        <div class="text-center text-white text-[1rem] pt-3 tracking-widest">
+        <div
+          class="max-lg:px-5 text-center text-white text-[1rem] pt-3 tracking-widest"
+        >
           We combine artistry and innovation to deliver exceptional visuals that
           redefine industry standards.
         </div>
@@ -520,6 +542,9 @@
       >
         <div
           class="py-[2rem] px-[1.5rem] table2 w-[27.5rem] h-[21rem] space-y-5 cursor-pointer"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
         >
           <img src="assets/pics/export.png" alt="" class="mx-auto pt-4" />
           <div
@@ -535,6 +560,8 @@
         </div>
         <div
           class="py-[2rem] px-[1.5rem] table2 w-[27.5rem] h-[21rem] space-y-5 cursor-pointer"
+          data-aos="fade-up"
+          data-aos-duration="3000"
         >
           <img src="assets/pics/flash-circle.png" alt="" class="mx-auto pt-4" />
           <div
@@ -550,6 +577,9 @@
         </div>
         <div
           class="py-[2rem] px-[1.5rem] table2 w-[27.5rem] h-[21rem] space-y-5 cursor-pointer"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
         >
           <img src="assets/pics/shield-tick.png" alt="" class="mx-auto pt-4" />
           <div
@@ -566,19 +596,22 @@
       </div>
     </div>
     <!-- Testimonials -->
-    <div class="bg-[#202253] pt-32">
+    <div class="bg-[#202253] pt-32 -mt-2">
       <div class="text-[3.5rem] font-bold text-center text-white uppercase">
         Testimonials
       </div>
-      <div
-        class="z-50 relative"
-      >
-        <div class="">
-          <div class="flex items-center whitespace-nowrap overflow-hidden  justify-center space-x-96  my-10 w-full">
+      <div class="z-50 relative">
+        <div class="whitespace-nowrap overflow-hidden">
+          <div
+            class="flex items-center relative justify-center space-x-10 my-10 w-full "
+            style="transition: 2s linear"
+          >
             <div
-              class="table3 w-[100.5rem] h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20"
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1"
             >
-              <div class="text-white text-[1rem] whitespace-normal">
+              <div
+                class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
+              >
                 "TJ Production transformed our concept into a stunning reality.
                 Their attention to detail and commitment to quality is
                 fantastic."
@@ -601,9 +634,11 @@
               </div>
             </div>
             <div
-              class="table3 w-[100.5rem] h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20"
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1"
             >
-              <div class="text-white text-[1rem] whitespace-normal">
+              <div
+                class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
+              >
                 "Incredibly fast turnaround times and outstanding quality. They
                 are our go-to team for 3D modeling needs."
               </div>
@@ -625,9 +660,11 @@
               </div>
             </div>
             <div
-              class="table3 w-[100.5rem] h-[16.25rem] py-[2rem] px-[1.5rem] space-y-14"
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-14 slider1"
             >
-              <div class="text-white text-[1rem] whitespace-normal">
+              <div
+                class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
+              >
                 “The attention to detail and dedication to meeting our
                 expectations were unmatched. TJ Production didn’t just meet our
                 deadlines; they consistently exceeded them!”
@@ -650,9 +687,11 @@
               </div>
             </div>
             <div
-              class="table3 w-[100.5rem] h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20"
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1"
             >
-              <div class="text-white text-[1rem] whitespace-normal">
+              <div
+                class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
+              >
                 "TJ Production transformed our concept into a stunning reality.
                 Their attention to detail and commitment to quality is
                 fantastic."
@@ -675,9 +714,11 @@
               </div>
             </div>
             <div
-              class="table3 w-[100.5rem] h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20"
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1"
             >
-              <div class="text-white text-[1rem] whitespace-normal">
+              <div
+                class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
+              >
                 "Incredibly fast turnaround times and outstanding quality. They
                 are our go-to team for 3D modeling needs."
               </div>
@@ -699,9 +740,11 @@
               </div>
             </div>
             <div
-              class="table3 w-[100.5rem] h-[16.25rem] py-[2rem] px-[1.5rem] space-y-14"
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-14 slider1"
             >
-              <div class="text-white text-[1rem] whitespace-normal">
+              <div
+                class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
+              >
                 “The attention to detail and dedication to meeting our
                 expectations were unmatched. TJ Production didn’t just meet our
                 deadlines; they consistently exceeded them!”
@@ -724,9 +767,11 @@
               </div>
             </div>
             <div
-              class="table3 w-[100.5rem] h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20"
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1"
             >
-              <div class="text-white text-[1rem] whitespace-normal">
+              <div
+                class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
+              >
                 "TJ Production transformed our concept into a stunning reality.
                 Their attention to detail and commitment to quality is
                 fantastic."
@@ -749,9 +794,11 @@
               </div>
             </div>
             <div
-              class="table3 w-[100.5rem] h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20"
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1"
             >
-              <div class="text-white text-[1rem] whitespace-normal">
+              <div
+                class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
+              >
                 "Incredibly fast turnaround times and outstanding quality. They
                 are our go-to team for 3D modeling needs."
               </div>
@@ -773,9 +820,11 @@
               </div>
             </div>
             <div
-              class="table3 w-[100.5rem] h-[16.25rem] py-[2rem] px-[1.5rem] space-y-14"
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-14 slider1"
             >
-              <div class="text-white text-[1rem] whitespace-normal">
+              <div
+                class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
+              >
                 “The attention to detail and dedication to meeting our
                 expectations were unmatched. TJ Production didn’t just meet our
                 deadlines; they consistently exceeded them!”
@@ -801,31 +850,35 @@
         </div>
 
         <div class="">
-          <div class="absolute top-0 right-0 -z-10">
+          <div
+            class="absolute max-2xl:top-24 2xl:top-0 max-2xl:right-0 2xl:right-0 -z-10"
+          >
             <img
               src="assets/pics/left-side-design.png"
               alt=""
-              class="w-[700px]"
+              class="2xl:w-[500px] max-lg:w-[218px] lg:w-[318px]"
             />
           </div>
-          <div class="absolute top-0 left-0 -z-10">
+          <div
+            class="absolute top-0 max-2xl:top-24 2xl:top-0 max-2xl:left-0 2xl:left-0 -z-10"
+          >
             <img
               src="assets/pics/right-side-design.png"
               alt=""
-              class="w-[700px]"
+              class="2xl:w-[500px] max-lg:w-[218px] lg:w-[318px]"
             />
           </div>
         </div>
       </div>
       <div class="flex justify-center items-center gap-2 py-5">
-        <div class="cursor-pointer">
+        <div class="cursor-pointer btn3">
           <img
             src="assets/pics/longarrow-left.png"
             alt=""
             class="btn1 py-[0.75rem] px-[1.5rem]"
           />
         </div>
-        <div class="cursor-pointer">
+        <div class="cursor-pointer btn2">
           <img
             src="assets/pics/longarrow-right.png"
             alt=""
@@ -835,17 +888,19 @@
       </div>
     </div>
     <!-- Welcome To TJ -->
-    <div class="bg-[#202253] pt-32">
-      <div class="text-[#23F23E] text-center text-[1rem] font-medium uppercase">
+    <div class="bg-[#202253] pt-32 2xl:pt-96 -mt-2">
+      <div
+        class="text-[#23F23E] text-center text-[1.15rem] font-medium uppercase"
+      >
         Welcome to TeeJay 3D
       </div>
       <div
-        class="w-[54.3125rem] mx-auto text-[2.75rem] text-center text-white uppercase font-bold leading-[3.375rem]"
+        class="2xl:w-[58.3125rem] mx-auto max-xl:text-[2.25rem] xl:text-[3rem] text-center text-white uppercase font-bold max-xl:leading-[2.5rem] xl:leading-[3.375rem] pt-5"
       >
         Where Every Design Redefines Boundary
       </div>
       <div
-        class="w-[56.25rem] mx-auto text-center text-[1rem] text-white font-light py-5"
+        class="2xl:w-[65rem] mx-auto text-center max-2xl:px-5 max-2xl:text-[1rem] 2xl:text-[1.25rem] text-white font-light py-5"
       >
         At Teejay 3D, every design is more than just a visual—it's a story
         brought to life. By blending creativity, precision, and a deep
@@ -853,14 +908,16 @@
         resonate across industries. Through collaboration and innovation, we
         break boundaries and redefine expectations.
       </div>
-      <div class="flex items-center justify-between px-40 py-10">
+      <div
+        class="flex flex-col-reverse items-center justify-center 2xl:px-40 py-10 2xl:flex 2xl:flex-row 2xl:justify-between"
+      >
         <div class="">
           <div
-            class="text-[2rem] font-bold text-white uppercase tracking-wider"
+            class="text-[2rem] font-bold text-white uppercase tracking-wider px-5"
           >
             Our notable partnerships include:
           </div>
-          <ul class="pl-3 space-y-1.5 pt-6">
+          <ul class="max-lg:px-10 2xl:pl-3 space-y-1.5 pt-6">
             <li class="text-[1rem] font-light text-white">
               <div class="flex items-center justify-start space-x-2.5">
                 <div class="h-1 w-1 bg-white rounded-full"></div>
@@ -880,47 +937,74 @@
               </div>
             </li>
           </ul>
-          <div
-            class="w-[45.0625rem] mr-auto flex items-center justify-between pt-10"
-          >
-            <img src="assets/pics/logo-spinelli.png" alt="" class="w-44" />
-            <img src="assets/pics/logo-mercedes-benz.png" alt="" class="w-44" />
-            <img
-              src="assets/pics/logo-genesis-st-laurent.png"
-              alt=""
-              class="w-44"
-            />
+          <div class="overflow-hidden whitespace-nowrap">
+            <div
+              class="2xl:w-[45.0625rem] 2xl:mr-auto flex items-center justify-center pt-10 space-x-10 2xl:space-x-20 slider w-full"
+            >
+              <img src="assets/pics/logo-spinelli.png" alt="" class="w-44" />
+              <img
+                src="assets/pics/logo-mercedes-benz.png"
+                alt=""
+                class="w-44"
+              />
+              <img
+                src="assets/pics/logo-genesis-st-laurent.png"
+                alt=""
+                class="w-44"
+              />
+              <img src="assets/pics/logo-spinelli.png" alt="" class="w-44" />
+              <img
+                src="assets/pics/logo-mercedes-benz.png"
+                alt=""
+                class="w-44"
+              />
+              <img
+                src="assets/pics/logo-genesis-st-laurent.png"
+                alt=""
+                class="w-44"
+              />
+              <img src="assets/pics/logo-spinelli.png" alt="" class="w-44" />
+              <img
+                src="assets/pics/logo-mercedes-benz.png"
+                alt=""
+                class="w-44"
+              />
+            </div>
           </div>
         </div>
         <div class="">
-          <img src="assets/pics/3d home.png" alt="" />
+          <img
+            src="assets/pics/3d home.png"
+            alt=""
+            class="max-2xl:mx-auto max-lg:px-5 max-lg:pb-10"
+          />
         </div>
       </div>
     </div>
     <!-- Start a project -->
-    <div class="bg-[#202253] pt-32">
+    <div class="bg-[#202253] pt-10 -mt-2">
       <div
-        class="text-[6.4375rem] text-white font-bold uppercasetext-white text-center leading-[6rem] uppercase"
+        class="max-lg:text-[4rem] lg:text-[5rem] 2xl:text-[6.4375rem] text-white font-bold uppercasetext-white text-center max-lg:leading-[4rem] lg:leading-[5rem] 2xl:leading-[6rem] uppercase"
       >
         <div class="relative">
           <div class="w-[30rem] mx-auto">
             <img
               src="assets/pics/onlylogo.png"
               alt=""
-              class="top-12 -left-3 relative"
+              class="max-lg:left-14 top-12 lg:left-5 2xl:-left-3 relative"
             />
             Start <span class="text-[#23F23E]">A</span> <br />
             Project
             <img
               src="assets/pics/onlyname.png"
               alt=""
-              class="bottom-10 -right-[29rem] relative"
+              class="bottom-10 max-lg:-right-[24rem] lg:-right-[27rem] 2xl:-right-[29rem] relative"
             />
           </div>
         </div>
       </div>
       <div
-        class="w-[56.25rem] text-[1rem] font-light text-white mx-auto text-center"
+        class="2xl:w-[56.25rem] text-[1rem] font-light text-white mx-auto text-center max-2xl:px-5"
       >
         Let’s transform your vision into reality. Contact us today to explore
         bold, creative solutions tailored to your needs. Together, we’ll craft
@@ -928,34 +1012,36 @@
       </div>
       <div class="w-[15.5625rem] mx-auto py-10">
         <button
-          class="w-[15.5625rem] mx-auto text-[#202253] px-[1.875rem] py-[0.8125rem] rounded-[0.75rem] bg-white"
+          class="w-[15.5625rem] mx-auto text-[#202253] px-[1.875rem] py-[0.8125rem] rounded-[0.75rem] bg-white text-[1.125rem] font-medium"
         >
           Get Free Quote
         </button>
       </div>
     </div>
     <!-- Footer -->
-    <footer class="bg-[#202253] pt-32 pb-[2rem] relative">
+    <footer class="bg-[#202253] pt-32 -mt-2 pb-[2rem] relative">
       <div class="">
         <img
           src="assets/pics/footer-left-design.png"
           alt=""
-          class="-top-40 right-0 absolute w-[35rem]"
+          class="top-[32rem] 2xl:-top-40 right-0 absolute 2xl:w-[35rem] max-2xl:w-[50%]"
         />
       </div>
       <div class="">
         <img
           src="assets/pics/footer-right-design.png"
           alt=""
-          class="-top-40 left-0 absolute w-[35rem]"
+          class="top-0 2xl:-top-40 -left-0 2xl:left-0 absolute 2xl:w-[35rem] max-2xl:w-[20rem]"
         />
       </div>
       <div class="footer mx-10 pt-[4rem] py-[2rem]">
-        <div class="flex items-start justify-between h-[19rem] px-[5rem]">
+        <div
+          class="flex flex-col items-start justify-between 2xl:h-[19rem] px-[3rem] 2xl:px-[5rem] 2xl:flex 2xl:flex-row"
+        >
           <div class="">
             <img src="assets/pics/footer-logo.png" alt="" />
             <div
-              class="pt-[6rem] text-white text-[1.25rem] font-medium uppercase"
+              class="max-2xl:pt-[3rem] 2xl:pt-[6rem] text-white text-[1.25rem] font-medium uppercase"
             >
               GENERAL INQUIRY
             </div>
@@ -963,21 +1049,25 @@
               hello@TJproduction.com
             </div>
           </div>
-          <div class="flex items-center justify-start pr-10 space-x-32 pt-16">
-            <div class="space-y-2">
+          <div
+            class="2xl:flex 2xl:flex-row flex flex-col items-start justify-between 2xl:pr-10 2xl:space-x-32 pt-10 max-2xl:-pl-40 max-lg:space-y-5"
+          >
+            <div class="2xl:space-y-2">
               <div
                 class="text-[1.25rem] font-bold text-white uppercase tracking-wider"
               >
                 Social Media
               </div>
-              <div class="text-[1rem] text-white font-normal pt-5">
+              <div
+                class="text-[1rem] text-white font-normal 2xl:pt-5 max-2xl:pt-2"
+              >
                 Instagram
               </div>
               <div class="text-[1rem] text-white font-normal">Behance</div>
               <div class="text-[1rem] text-white font-normal">linked in</div>
               <div class="text-[1rem] text-white font-normal">dribbble</div>
             </div>
-            <div class="space-y-7">
+            <div class="2xl:space-y-7 max-lg:space-y-2">
               <div
                 class="text-[1.25rem] font-bold text-white uppercase tracking-wider"
               >
@@ -992,7 +1082,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full h-[0.5px] line"></div>
+        <div class="w-full h-[0.5px] line mt-[2rem]"></div>
         <div
           class="flex items-end h-16 justify-center text-[1rem] text-white font-normal"
         >
@@ -1000,5 +1090,46 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      let sliders = document.querySelectorAll(".slider1"); // Use querySelectorAll to get all sliders
+      let btnNext = document.querySelector(".btn2");
+      let btnPrev = document.querySelector(".btn3");
+
+      let counter = 0; // Start counter at 0
+
+      const slideImage = () => {
+        sliders.forEach((slider, index) => {
+          slider.style.transform = `translateX(-${counter * 100}%)`;
+          slider.style.transition = "transform 0.5s ease-in-out"; // Smooth transition
+        });
+      };
+
+      // Add event listener for next button
+      btnNext.addEventListener("click", () => {
+        if (counter < sliders.length - 1) {
+          counter++;
+        } else {
+          counter = 0; // Loop back to the first slide
+        }
+        slideImage();
+        console.log("Next button clicked. Counter:", counter);
+      });
+
+      // Add event listener for previous button
+      btnPrev.addEventListener("click", () => {
+        if (counter > 0) {
+          counter--;
+        } else {
+          counter = sliders.length - 1; // Loop back to the last slide
+        }
+        slideImage();
+        console.log("Previous button clicked. Counter:", counter);
+      });
+    </script>
   </body>
 </html>
