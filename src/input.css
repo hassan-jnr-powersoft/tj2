@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+
 .tester-bg {
   background-position: 15% 10% ;
   background-size: cover;
