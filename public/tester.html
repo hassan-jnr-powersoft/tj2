@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smooth Scroll Example</title>
+  <style>
+    html {
+      scroll-behavior: smooth; 
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      /* transition: background-color 0.3s ease-in-out; */
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+
+    #services {
+      background-color: #f8f9fa;
+    }
+
+    #other-section {
+      background-color: #e9ecef;
+    }
+  </style>
+</head>
+<body>
+  <!-- Button -->
+  <button class="btn" onclick="scrollToServices()">Services</button>
+
+  <!-- Placeholder Section -->
+  <section id="other-section">
+    <p>Scroll down to see the Services section.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <p>Welcome to the Services Section!</p>
+  </section>
+
+  <script>
+    // Function to scroll down to the Services section
+    function scrollToServices() {
+      const servicesSection = document.getElementById("services");
+      servicesSection.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>

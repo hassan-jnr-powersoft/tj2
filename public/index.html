@@ -9,10 +9,6 @@
       href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
   </head>
 
   <body class="overflow-x-hidden">
@@ -29,10 +25,22 @@
             class="flex items-center justify-center space-x-[3.38rem] text-[1.125rem] max-lg:hidden font-medium"
           >
             <li><a href="#" class="text-[#23F23E]">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Why Choose Us</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><div  class="cursor-pointer hover:text-[#23F23E]" onclick="scrollToServices3()">Services</div></li>
+            <li><div onclick="scrollToServices2()" class="cursor-pointer hover:text-[#23F23E]">About</div></li>
+            <li>
+              <div onclick="scrollToServices()" class="cursor-pointer hover:text-[#23F23E]">
+                Why Choose Us
+              </div>
+            </li>
+            <li>
+              <div
+                href="#"
+                onclick="scrollToServices1()"
+                class="cursor-pointer hover:text-[#23F23E]"
+              >
+                Portfolio
+              </div>
+            </li>
             <li>
               <a href="#">
                 <button
@@ -89,7 +97,7 @@
       </div>
     </div>
     <!-- What we Bring -->
-    <div class="bg-[#202253]">
+    <div class="bg-[#202253]" id="services1">
       <div
         class="text-center max-2xl:text-[2.25rem] 2xl:text-[2.7rem] text-white font-bold uppercase pt-20"
       >
@@ -109,7 +117,7 @@
                 alt=""
                 class="img"
               />
-              <div class="font-normal text-[16px]">3D modeling</div>
+              <div class="font-normal text-[16px] ">3D modeling</div>
             </div>
             <div
               class="flex justify-center space-x-2 items-center table1 py-[18px] px-[30px] text-white btn cursor-pointer"
@@ -527,7 +535,7 @@
       </div>
     </div>
     <!-- WHY WE! -->
-    <div class="bg-[#202253] 2xl:pt-32 -mt-2">
+    <div class="bg-[#202253] 2xl:pt-32 -mt-2" id="services">
       <div class="">
         <div
           class="max-2xl:text-[2.25rem] 2xl:text-[3.375rem] font-bold text-white uppercase text-center"
@@ -604,14 +612,14 @@
       <div class="text-[3.5rem] font-bold text-center text-white uppercase">
         Testimonials
       </div>
-      <div class="z-50 relative swiper">
-        <div class="whitespace-nowrap overflow-hidden slider-wrapper">
+      <div class="z-50 relative">
+        <div class="whitespace-nowrap overflow-hidden">
           <div
-            class="flex items-center relative justify-center space-x-10 my-10 w-full swiper-wrapper"
-            style="transition: 2s linear"
+            class="flex items-center relative justify-center space-x-10 my-10 w-full main-slider"
+            style="transition: 0.5s linear"
           >
             <div
-              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-14 slider1 swiper-slide"
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-14 slider1"
             >
               <div
                 class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
@@ -638,7 +646,7 @@
               </div>
             </div>
             <div
-              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1 swiper-slide"
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1"
             >
               <div
                 class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
@@ -665,7 +673,7 @@
               </div>
             </div>
             <div
-              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1 swiper-slide"
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1"
             >
               <div
                 class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
@@ -691,7 +699,7 @@
               </div>
             </div>
             <div
-              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-14 slider1 swiper-slide"
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-14 slider1"
             >
               <div
                 class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
@@ -718,7 +726,7 @@
               </div>
             </div>
             <div
-              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1 swiper-slide"
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1"
             >
               <div
                 class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
@@ -745,7 +753,7 @@
               </div>
             </div>
             <div
-              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1 swiper-slide"
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1"
             >
               <div
                 class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
@@ -759,6 +767,140 @@
                   <div class="text-white">
                     <div>Emily Davis</div>
                     <div>CEO- At Military Time</div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-end">
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-14 slider1"
+            >
+              <div
+                class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
+              >
+                “The attention to detail and dedication to meeting our
+                expectations were unmatched. TJ Production didn’t just meet our
+                deadlines; they consistently exceeded them!”
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center justify-start space-x-3">
+                  <img src="assets/pics/Ellipse 4 (2).png" alt="" />
+                  <div class="text-white">
+                    <div>Kristin Watson</div>
+                    <div>CEO- At Military Time</div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-end">
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1"
+            >
+              <div
+                class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
+              >
+                "TJ Production transformed our concept into a stunning reality.
+                Their attention to detail and commitment to quality is
+                fantastic."
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center justify-start space-x-3">
+                  <img src="assets/pics/Ellipse 4.png" alt="" />
+                  <div class="">
+                    <div class="text-white">Michael Brown</div>
+                    <div class="text-white">CEO- At Military Time</div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-end">
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1"
+            >
+              <div
+                class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
+              >
+                "Incredibly fast turnaround times and outstanding quality. They
+                are our go-to team for 3D modeling needs."
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center justify-start space-x-3">
+                  <img src="assets/pics/Ellipse 4 (1).png" alt="" />
+                  <div class="text-white">
+                    <div>Emily Davis</div>
+                    <div>CEO- At Military Time</div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-end">
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-14 slider1"
+            >
+              <div
+                class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
+              >
+                “The attention to detail and dedication to meeting our
+                expectations were unmatched. TJ Production didn’t just meet our
+                deadlines; they consistently exceeded them!”
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center justify-start space-x-3">
+                  <img src="assets/pics/Ellipse 4 (2).png" alt="" />
+                  <div class="text-white">
+                    <div>Kristin Watson</div>
+                    <div>CEO- At Military Time</div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-end">
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star-filled.png" alt="" />
+                  <img src="assets/pics/star.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="table3 w-full h-[16.25rem] py-[2rem] px-[1.5rem] space-y-20 slider1"
+            >
+              <div
+                class="text-white text-[1rem] whitespace-normal w-[22.875rem] 2xl:w-[27.5rem]"
+              >
+                "TJ Production transformed our concept into a stunning reality.
+                Their attention to detail and commitment to quality is
+                fantastic."
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center justify-start space-x-3">
+                  <img src="assets/pics/Ellipse 4.png" alt="" />
+                  <div class="">
+                    <div class="text-white">Michael Brown</div>
+                    <div class="text-white">CEO- At Military Time</div>
                   </div>
                 </div>
                 <div class="flex items-center justify-end">
@@ -771,12 +913,6 @@
               </div>
             </div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
         <div class="">
           <div
@@ -800,14 +936,14 @@
         </div>
       </div>
       <div class="flex justify-center items-center gap-2 py-5">
-        <div class="cursor-pointer btn3">
+        <div class="cursor-pointer btn2">
           <img
             src="assets/pics/longarrow-left.png"
             alt=""
             class="btn1 py-[0.75rem] px-[1.5rem]"
           />
         </div>
-        <div class="cursor-pointer btn2">
+        <div class="cursor-pointer btn3">
           <img
             src="assets/pics/longarrow-right.png"
             alt=""
@@ -817,101 +953,105 @@
       </div>
     </div>
     <!-- Welcome To TJ -->
-    <div class="bg-[#202253] pt-32 2xl:pt-96 -mt-2">
-      <div
-        class="text-[#23F23E] text-center text-[1.15rem] font-medium uppercase"
-      >
-        Welcome to TeeJay 3D
-      </div>
-      <div
-        class="2xl:w-[58.3125rem] mx-auto max-xl:text-[2.25rem] xl:text-[3rem] text-center text-white uppercase font-bold max-xl:leading-[2.5rem] xl:leading-[3.375rem] pt-5"
-      >
-        Where Every Design Redefines Boundary
-      </div>
-      <div
-        class="2xl:w-[65rem] mx-auto text-center max-2xl:px-5 max-2xl:text-[1rem] 2xl:text-[1.25rem] text-white font-light py-5"
-      >
-        At Teejay 3D, every design is more than just a visual—it's a story
-        brought to life. By blending creativity, precision, and a deep
-        understanding of our clients’ needs, we craft impactful solutions that
-        resonate across industries. Through collaboration and innovation, we
-        break boundaries and redefine expectations.
-      </div>
-      <div
-        class="flex flex-col-reverse items-center justify-center 2xl:px-40 py-10 2xl:flex 2xl:flex-row 2xl:justify-between"
-      >
-        <div class="">
-          <div
-            class="text-[2rem] font-bold text-white uppercase tracking-wider px-5"
-          >
-            Our notable partnerships include:
-          </div>
-          <ul class="max-lg:px-10 2xl:pl-3 space-y-1.5 pt-6">
-            <li class="text-[1rem] font-light text-white">
-              <div class="flex items-center justify-start space-x-2.5">
-                <div class="h-1 w-1 bg-white rounded-full"></div>
-                <div class="">Spinelli</div>
-              </div>
-            </li>
-            <li class="text-[1rem] font-light text-white">
-              <div class="flex items-center justify-start space-x-2.5">
-                <div class="h-1 w-1 bg-white rounded-full"></div>
-                <div class="">Mercedes-Benz</div>
-              </div>
-            </li>
-            <li class="text-[1rem] font-light text-white">
-              <div class="flex items-center justify-start space-x-2.5">
-                <div class="h-1 w-1 bg-white rounded-full"></div>
-                <div class="">Grand Signature Projects</div>
-              </div>
-            </li>
-          </ul>
-          <div class="overflow-hidden whitespace-nowrap">
+    <div class="bg-[#202253] pt-32 2xl:pt-96 -mt-2" >
+      <div class="" id="portfolio">
+        <div
+          class="text-[#23F23E] text-center text-[1.15rem] font-medium uppercase"
+        >
+          Welcome to TeeJay 3D
+        </div>
+
+        <div
+          class="2xl:w-[58.3125rem] mx-auto max-xl:text-[2.25rem] xl:text-[3rem] text-center text-white uppercase font-bold max-xl:leading-[2.5rem] xl:leading-[3.375rem] pt-5"
+        >
+          Where Every Design Redefines Boundary
+        </div>
+
+        <div
+          class="2xl:w-[65rem] mx-auto text-center max-2xl:px-5 max-2xl:text-[1rem] 2xl:text-[1.25rem] text-white font-light py-5"
+        >
+          At Teejay 3D, every design is more than just a visual—it's a story
+          brought to life. By blending creativity, precision, and a deep
+          understanding of our clients’ needs, we craft impactful solutions that
+          resonate across industries. Through collaboration and innovation, we
+          break boundaries and redefine expectations.
+        </div>
+        <div
+          class="flex flex-col-reverse items-center justify-center 2xl:px-40 py-10 2xl:flex 2xl:flex-row 2xl:justify-between"
+        >
+          <div class="">
             <div
-              class="2xl:w-[45.0625rem] 2xl:mr-auto flex items-center justify-center pt-10 space-x-10 2xl:space-x-20 slider w-full"
+              class="text-[2rem] font-bold text-white uppercase tracking-wider px-5"
             >
-              <img src="assets/pics/logo-spinelli.png" alt="" class="w-44" />
-              <img
-                src="assets/pics/logo-mercedes-benz.png"
-                alt=""
-                class="w-44"
-              />
-              <img
-                src="assets/pics/logo-genesis-st-laurent.png"
-                alt=""
-                class="w-44"
-              />
-              <img src="assets/pics/logo-spinelli.png" alt="" class="w-44" />
-              <img
-                src="assets/pics/logo-mercedes-benz.png"
-                alt=""
-                class="w-44"
-              />
-              <img
-                src="assets/pics/logo-genesis-st-laurent.png"
-                alt=""
-                class="w-44"
-              />
-              <img src="assets/pics/logo-spinelli.png" alt="" class="w-44" />
-              <img
-                src="assets/pics/logo-mercedes-benz.png"
-                alt=""
-                class="w-44"
-              />
+              Our notable partnerships include:
+            </div>
+            <ul class="max-lg:px-10 2xl:pl-3 space-y-1.5 pt-6">
+              <li class="text-[1rem] font-light text-white">
+                <div class="flex items-center justify-start space-x-2.5">
+                  <div class="h-1 w-1 bg-white rounded-full"></div>
+                  <div class="">Spinelli</div>
+                </div>
+              </li>
+              <li class="text-[1rem] font-light text-white">
+                <div class="flex items-center justify-start space-x-2.5">
+                  <div class="h-1 w-1 bg-white rounded-full"></div>
+                  <div class="">Mercedes-Benz</div>
+                </div>
+              </li>
+              <li class="text-[1rem] font-light text-white">
+                <div class="flex items-center justify-start space-x-2.5">
+                  <div class="h-1 w-1 bg-white rounded-full"></div>
+                  <div class="">Grand Signature Projects</div>
+                </div>
+              </li>
+            </ul>
+            <div class="overflow-hidden whitespace-nowrap">
+              <div
+                class="2xl:w-[45.0625rem] 2xl:mr-auto flex items-center justify-center pt-10 space-x-10 2xl:space-x-20 slider w-full"
+              >
+                <img src="assets/pics/logo-spinelli.png" alt="" class="w-44" />
+                <img
+                  src="assets/pics/logo-mercedes-benz.png"
+                  alt=""
+                  class="w-44"
+                />
+                <img
+                  src="assets/pics/logo-genesis-st-laurent.png"
+                  alt=""
+                  class="w-44"
+                />
+                <img src="assets/pics/logo-spinelli.png" alt="" class="w-44" />
+                <img
+                  src="assets/pics/logo-mercedes-benz.png"
+                  alt=""
+                  class="w-44"
+                />
+                <img
+                  src="assets/pics/logo-genesis-st-laurent.png"
+                  alt=""
+                  class="w-44"
+                />
+                <img src="assets/pics/logo-spinelli.png" alt="" class="w-44" />
+                <img
+                  src="assets/pics/logo-mercedes-benz.png"
+                  alt=""
+                  class="w-44"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="">
-          <img
-            src="assets/pics/3d home.png"
-            alt=""
-            class="max-2xl:mx-auto max-lg:px-5 max-lg:pb-10"
-          />
+          <div class="">
+            <img
+              src="assets/pics/3d home.png"
+              alt=""
+              class="max-2xl:mx-auto max-lg:px-5 max-lg:pb-10"
+            />
+          </div>
         </div>
       </div>
     </div>
     <!-- Start a project -->
-    <div class="bg-[#202253] pt-10 -mt-2">
+    <div class="bg-[#202253] pt-10 -mt-2 " id="start">
       <div
         class="max-lg:text-[4rem] lg:text-[5rem] 2xl:text-[6.4375rem] text-white font-bold uppercasetext-white text-center max-lg:leading-[4rem] lg:leading-[5rem] 2xl:leading-[6rem] uppercase"
       >
@@ -1020,11 +1160,29 @@
       </div>
     </footer>
     <!-- linking swipperJS Script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <script src="script.js"></script>
+    <script>
+      function scrollToServices() {
+        const servicesSection = document.getElementById("services");
+        servicesSection.scrollIntoView({ behavior: "smooth" });
+      }
+      function scrollToServices1() {
+        const servicesSection = document.getElementById("portfolio");
+        servicesSection.scrollIntoView({ behavior: "smooth" });
+      }
+      function scrollToServices2() {
+        const servicesSection = document.getElementById("start");
+        servicesSection.scrollIntoView({ behavior: "smooth" });
+      }
+      function scrollToServices3() {
+        const servicesSection = document.getElementById("services1");
+        servicesSection.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
   </body>
 </html>
